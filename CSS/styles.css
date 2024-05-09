@@ -1,0 +1,380 @@
+.raleway-mainfont {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+body {
+	font-family: Raleway;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+	background-color: #730606;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+	font-size: 13px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    padding: 1px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    padding: 15px;
+	background-color: #907373;
+	text-align: center;
+}
+
+nav li {
+	padding-left: ;
+	padding-right: 110px;
+    display: inline;
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+	padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+	background-color: #58504E;
+	color: #FFFFFF;
+}
+
+nav img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+	vertical-align: middle;
+}
+
+main {
+    padding-left: 150px;
+	padding-right: 150px;
+}
+
+footer {
+    background-color: #999;
+    color: #eee;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+display: flex;
+align-items: center;
+}
+
+.logo img {
+width: 40px;
+height: auto;
+margin-right: 10px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.slide-container {
+    position: relative;
+}
+
+.slide-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 100%;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-text {
+    max-width: 50%;
+	font-size: 18px;
+}
+
+.content-image {
+    flex-shrink: 0;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.content-image img {
+    max-width: 100%;
+    height: auto;
+	width: 300px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.image-container {
+	margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.image-container img {
+    display: block;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-box {
+    width: 23%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.feature-box img {
+    width: 40px;
+    height: auto;
+    margin-right: 5px;
+	vertical-align: middle;
+}
+
+.feature-box h3 {
+    margin-top: 10px;
+}
+
+.feature-box p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.meet-the-team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    width: 30%;
+    text-align: left;
+	border: 5px solid #ccc;
+}
+
+.member-image img {
+    width: 100%;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.member-details h3 {
+    margin: 0;
+}
+
+.member-details p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.course {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+	text-align: center;
+}
+
+.course ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.course ul li {
+    margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #58504E;
+}
+
+#application-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group input[type="tel"],
+.input-group input[type="email"],
+.input-group input[type="date"],
+.input-group input[type="file"],
+.input-group input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#application-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#application-form input[type="submit"]:hover {
+    background-color: #58504E;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+}
